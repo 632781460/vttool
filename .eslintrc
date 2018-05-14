@@ -6,6 +6,7 @@
   "env": {
     "node": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6
   }

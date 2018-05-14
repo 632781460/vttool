@@ -4,12 +4,18 @@
   "main": "index.js",
   "author": "sky",
   "license": "MIT",
+  "bin": {
+    "vttool": "./index.js"
+  },
   "dependencies": {
+    "co": "^4.6.0",
     "commander": "^2.15.1",
     "moment": "^2.22.1",
-    "nodegit": "^0.22.0"
+    "nodegit": "^0.22.0",
+    "simple-git": "^1.92.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
