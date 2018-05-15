@@ -1,3 +1,5 @@
 node_modules
 .vscode
 npm-debug.*
+.npmrc
+yarn-error.log

@@ -1,5 +1,5 @@
 const gitP = require('simple-git/promise');
-const git = gitP(__dirname);
+const git = gitP(process.cwd());
 const program = require('commander');
 const moment = require('moment');
 const co = require('co');
@@ -21,5 +21,7 @@ const upstream = program.upstream || 'origin';
 co(function * tagFn() {
   const vTag = getTag(tagName);
   yield git.addTag(vTag);
-  yield git.push([upstream, vTag]);
+  if (program.auto) {
+    yield git.push([upstream, vTag]);
+  }
 });
