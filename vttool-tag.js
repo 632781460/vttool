@@ -6,7 +6,8 @@ const co = require('co');
 let tagName = '';
 function getTag(name) {
   const now = new Date();
-  return `${moment(now).format('vYYYYMMDDHHmm')}-${name}`;
+  const suffixName = name ? `-${name}` : '';
+  return `${moment(now).format('vYYYYMMDDHHmm')}${suffixName}`;
 }
 program
   .option('-a, --auto', '是否自动推送')
