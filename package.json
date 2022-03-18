@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "co": "^4.6.0",
-    "commander": "^2.15.1",
+    "commander": "^2.20.3",
     "moment": "^2.22.1",
     "simple-git": "^1.92.0"
   },
